@@ -12,3 +12,15 @@ paint_screen:
         INX
         CPX #$00
         BNE phase_two
+
+    phase_three:
+        STA $0400, X
+        INX
+        CPX #$00
+        BNE phase_three
+
+    phase_four:
+        STA $0500, X
+        INX
+        CPX #$00
+        BNE phase_four
